@@ -1,0 +1,120 @@
+:root {
+  --primary-color: #6a8ade;
+  --level-1: #104b8c;
+  --level-2: #fbb2dd;
+  --level-3: #6cfffe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex-header-bg {
+  background-color: var(--primary-color);
+}
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1030px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  color: #fff;
+}
+
+.flex-header h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.header-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  gap: 40px;
+}
+
+.flex-content {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.flex-content h1,
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.05rem;
+}
+
+.flex-content h1 {
+  font-weight: 700;
+  margin: 60px 0 40px 0;
+}
+
+.flex-content h2 {
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.flex-about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-about::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #6a8ade;
+  margin-bottom: 60px;
+}
+
+.flex-about::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #6a8ade;
+  margin-top: 60px;
+}
+
+.flex-about h2 {
+  flex-basis: 100%;
+}
+.flex-about p {
+  max-width: 500px;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  color: #707070;
+}
+
+.about-images {
+  display: flex;
+  object-fit: cover;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.img-mountain-2 {
+  height: 250px;
+}
