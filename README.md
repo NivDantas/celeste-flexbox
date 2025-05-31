@@ -14,3 +14,5 @@ This project is a static webpage inspired by the Celeste game, specifically deve
 
 - **HTML5** - Semantic page structure
 - **CSS3** - Styling with focus on Flexbox
+
+![Celeste Mountain](./imgs/celestemountain.jpg)
