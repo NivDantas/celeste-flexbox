@@ -69,7 +69,7 @@ h3 {
 }
 
 .flex-main h1,
-h2 {
+.flex-main h2 {
   font-size: 2.5rem;
   letter-spacing: 0.05rem;
 }
@@ -131,7 +131,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 0px 20px;
-  flex: 1;
   align-items: end;
   margin-bottom: 60px;
 }
@@ -174,6 +173,7 @@ span {
   color: #959595;
   display: flex;
   font-weight: 500;
+  flex-wrap: wrap;
   font-size: 2.25rem;
   gap: 10px;
 }
@@ -207,4 +207,149 @@ span {
 .flex-qualities div {
   width: calc(33.333% - 60px);
   margin-bottom: 80px;
+}
+
+@media (max-width: 68rem) {
+  .flex-header {
+    margin: 0 20px;
+  }
+  .flex-main h1,
+  .flex-main h2 {
+    font-size: 1.75rem;
+    margin-left: 20px;
+  }
+
+  .flex-about p {
+    font-size: 1.25rem;
+    margin-left: 20px;
+  }
+  .flex-content h3 {
+    font-size: 1.75rem;
+  }
+
+  .flex-qualities h2 {
+    font-size: 1.75rem;
+  }
+
+  .flex-qualities p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 64rem) {
+  .img-mountain-2 {
+    display: none;
+  }
+
+  .img-mountain-1 {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 60rem) {
+  .flex-qualities h2::before {
+    width: 25px;
+    height: 5px;
+    margin-bottom: 5px;
+  }
+  .flex-qualities h2 {
+    display: block;
+  }
+}
+
+@media (max-width: 56rem) {
+  .flex-qualities h2::before {
+    display: none;
+  }
+
+  .flex-qualities h2 {
+    font-size: 2rem;
+  }
+  .flex-qualities p {
+    display: none;
+  }
+
+  .flex-qualities div {
+    width: calc(50% - 60px);
+    text-align: center;
+  }
+}
+
+@media (max-width: 50rem) {
+  .flex-about h2 {
+    text-align: center;
+  }
+  .flex-main > h1 {
+    text-align: center;
+    font-size: 2.25rem;
+  }
+  .flex-about {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .img-mountain-1 {
+    height: 300px;
+    border-radius: 3px;
+  }
+  .flex-about h2,
+  .flex-about p,
+  .img-mountain-1 {
+    margin: 0px;
+  }
+  .flex-about::before {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 40rem) {
+  .flex-qualities {
+    display: none;
+  }
+  .header-nav ul li:nth-child(3) {
+    display: none;
+  }
+  .flex-content {
+    gap: 0px 10px;
+  }
+  .flex-content h3 {
+    padding: 20px 0 25px 20px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 34rem) {
+  .img-mountain-1 {
+    height: 200px;
+  }
+}
+
+@media (max-width: 28rem) {
+  .flex-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-about {
+    text-align: center;
+  }
+  .header-nav {
+    margin-top: 20px;
+  }
+  .flex-content h2 {
+    font-size: 1.5rem;
+    margin: 10px 10px;
+  }
+  .flex-content h3 {
+    font-size: 1.1rem;
+    padding: 15px 0 20px 20px;
+  }
+
+  .flex-about::after {
+    margin: 20px 0;
+  }
+
+  .flex-main h1 {
+    margin-bottom: 30px;
+  }
 }
